@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: Arial, Helvetica, sans-serif;
 }
 
 html,
