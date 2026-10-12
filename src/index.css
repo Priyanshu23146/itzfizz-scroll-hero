@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme {
+:root {
   --font-sans: Arial, Helvetica, sans-serif;
 }
 

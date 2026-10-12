@@ -61,7 +61,7 @@ function Headline({ solid }) {
     <h1
       aria-label={solid ? undefined : "Welcome Itzfizz"}
       aria-hidden={solid ? "true" : undefined}
-      className={`${solid ? "headline-solid z-20 text-[#111]" : "z-[5] text-white/[0.06]"} pointer-events-none absolute inset-x-0 ${BAND_POS} flex flex-wrap content-center items-center justify-center gap-x-[0.28em] px-2 text-[clamp(2rem,9.8vw,9.5rem)] font-bold leading-none tracking-[0.02em]`}
+      className={`${solid ? "headline-solid z-20 text-[#111]" : "z-5text-white/0.06"} pointer-events-none absolute inset-x-0 ${BAND_POS} flex flex-wrap content-center items-center justify-center gap-x-[0.28em] px-2 text-[clamp(2rem,9.8vw,9.5rem)] font-bold leading-none tracking-[0.02em]`}
     >
       {WORDS.map((word) => (
         <span key={word} aria-hidden="true" className="flex">
@@ -81,7 +81,7 @@ function Stat({ value, label, style, at, dur }) {
     <div className="stat will-change-transform" data-at={at} data-dur={dur}>
       <div className="stat-in">
         <div
-          className={`min-h-[110px] w-[46vw] rounded-xl p-4 md:min-h-0 md:p-[2vw] ${style}`}
+          className={`min-h-27.5 w-[46vw] rounded-xl p-4 md:min-h-0 md:p-[2vw] ${style}`}
         >
           <div className="text-4xl font-bold leading-none md:text-[max(2.2rem,4.5vw)]">
             <span className="num tabular-nums">{value}</span>%
@@ -205,7 +205,7 @@ export default function App() {
         </div>
 
         {/* dark road */}
-        <div className={`absolute inset-x-0 z-[1] bg-[#1e1e1e] ${BAND_POS}`} />
+        <div className={`absolute inset-x-0 z-1 bg-[#1e1e1e] ${BAND_POS}`} />
         <Headline />
         {/* green trail (scaled by scroll) */}
         <div
@@ -218,7 +218,7 @@ export default function App() {
           className={`pointer-events-none absolute left-0 z-30 flex items-center ${BAND_POS}`}
         >
           <div className="car-intro">
-            <div className="car aspect-[21/10] h-[29vh] will-change-transform">
+            <div className="car aspect-21/10 h-[29vh] will-change-transform">
               <Car className="block h-full w-full" />
             </div>
           </div>
